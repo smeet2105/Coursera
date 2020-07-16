@@ -1,0 +1,99 @@
+*{
+	box-sizing: border-box;
+}
+
+
+body{
+	background-color: #cce6ff;
+	margin: 0px;
+}
+#heading{
+	font-family: Helvetica, Heavitas;
+	font-style: bold;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 12px;
+	font-size: 150%;
+	background-color:#004080; 
+	text-shadow: 5px 2px 8px #000000;
+	margin-bottom: 100px;
+}
+
+section{
+	overflow: none;
+	margin-left:50px;
+	margin-right: 50px;
+	border: 1px black solid;
+	width: auto;
+	margin-bottom: 50px;
+	float: left;
+	background-color: #e6f2ff;
+	
+}
+section>p{
+		padding: 25px;
+}
+
+
+
+
+/**
+.box section{
+	border: 1px black solid;
+	background-color: #ffffff;
+	padding: 50px;
+	margin:50px;
+	margin-left: 60px;
+	width: 25%;
+	overflow: none;
+	float: left;
+		
+}**/
+
+.name{
+	position: static;
+	color: white;
+	border: 1px black solid;
+	padding: 3px;
+	padding-left: 10px;
+	background-color: #1a0900; 
+	float: right;
+	text-align: center;
+	overflow: none;
+	left: 10px;
+	bottom: 10px;
+	font-size: 125%;
+}
+
+
+
+
+
+/******************large devices************/
+
+/***************medium devices*************/
+@media (min-width: 992px){
+	.col-lg-4{
+		width: 33.33%;
+		float: left;
+	}
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+	.col-md-6{
+		width: 50%;
+		float: left;
+	}
+	.col-md-12{
+		width: 100%;
+		float: left;
+	}
+}
+/***************small devices*************/
+@media (min-width: 0px) and (max-width:767px){
+	.col-xs-12{
+		width: 100%;
+		float:left;
+	}
+}
